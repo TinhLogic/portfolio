@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Duy Tinh">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Duy Tinh - Senior Full-Stack & Systems Engineer Portfolio. Chuyên thiết kế hệ thống phân tán, zero-allocation microservices và giao diện web chuẩn WAI-ARIA WCAG 2.1 AA.">
+
+  <meta property="og:title" content="Duy Tinh — Senior Full-Stack & Systems Engineer">
+  <meta property="og:description" content="Architecting high-throughput distributed systems & accessible web experiences.">
+  <meta property="og:type" content="website">
+
+  <title>Duy Tinh — Senior Full-Stack & Systems Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Chuyển đến nội dung chính (Skip to Content)</a>
+
+  <div id="a11y-live-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-bar" aria-label="Điều hướng chính">
+        
+        <a href="#hero" class="brand-link" aria-label="Trang chủ Duy Tinh">
+          <svg class="brand-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polygon points="12 2 2 22 22 22 12 2"/>
+          </svg>
+          <span style="font-weight: 600; letter-spacing: -0.4px;">duytinh<span style="color: var(--color-mute);">.dev</span></span>
+        </a>
+
+        <ul class="nav-desktop-links" role="list">
+          <li><a href="#projects" class="nav-link">Dự án</a></li>
+          <li><a href="#architecture" class="nav-link">Kiến trúc</a></li>
+          <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
+          <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+          <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          
+          <button 
+            type="button" 
+            id="theme-toggle-btn" 
+            class="btn-icon-circular" 
+            aria-label="Chuyển đổi giao diện sáng/tối"
+            title="Đổi giao diện">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+          </button>
+
+          <a href="#contact" class="btn btn-primary-sm">Liên hệ</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <section id="hero" class="hero-band" aria-labelledby="hero-title">
+      
+      <div class="hero-mesh-canvas" aria-hidden="true">
+        <div class="mesh-blob blob-cyan"></div>
+        <div class="mesh-blob blob-blue"></div>
+        <div class="mesh-blob blob-violet"></div>
+        <div class="mesh-blob blob-pink"></div>
+        <div class="mesh-blob blob-amber"></div>
+      </div>
+
+      <div class="container hero-content">
+        
+        <h1 id="hero-title" class="display-xl hero-headline">
+          Nguyễn Duy Tính
+        </h1>
+
+        <p id="hero-lead" class="hero-lead">
+          Kỹ sư phần mềm cao cấp chuyên sâu về backend hiệu năng cao, zero-allocation C#/.NET 8, hệ thống xử lý hàng chục triệu requests/ngày và giao diện web hiện đại tuân thủ nghiêm ngặt chuẩn trợ năng WAI-ARIA WCAG 2.1 AA.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <span>Bắt đầu trao đổi</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <span>Khám phá dự án</span>
+          </a>
+        </div>
+
+        <div id="hero-stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 16px; margin-top: var(--space-3xl);" role="region" aria-label="Thống kê hiệu năng kỹ thuật">
+          <div class="feature-card" style="padding: 16px; text-align: center;">
+            <span class="tabular-nums" style="font-size: 24px; font-weight: 600; color: var(--color-ink); letter-spacing: -0.5px;">8+</span>
+            <span class="body-sm" style="display: block; margin-top: 4px;">Năm kinh nghiệm</span>
+          </div>
+          <div class="feature-card" style="padding: 16px; text-align: center;">
+            <span class="tabular-nums" style="font-size: 24px; font-weight: 600; color: var(--color-ink); letter-spacing: -0.5px;">40M+</span>
+            <span class="body-sm" style="display: block; margin-top: 4px;">Truy vấn API/ngày</span>
+          </div>
+          <div class="feature-card" style="padding: 16px; text-align: center;">
+            <span class="tabular-nums" style="font-size: 24px; font-weight: 600; color: var(--color-ink); letter-spacing: -0.5px;"><15ms</span>
+            <span class="body-sm" style="display: block; margin-top: 4px;">P99 Độ trễ phản hồi</span>
+          </div>
+          <div class="feature-card" style="padding: 16px; text-align: center;">
+            <span class="tabular-nums" style="font-size: 24px; font-weight: 600; color: var(--color-ink); letter-spacing: -0.5px;">99.99%</span>
+            <span class="body-sm" style="display: block; margin-top: 4px;">Độ sẵn sàng hệ thống</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logo-strip" aria-label="Công nghệ cốt lõi">
+      <div class="container logo-strip-inner">
+        <span class="mono-eyebrow" style="font-size: 11px;">CORE INFRASTRUCTURE & RUNTIMES</span>
+        <div id="core-tech-grid" class="logo-strip-grid">
+          <span class="tech-item"><span style="color: var(--color-ink); font-weight: 600;">.NET 8</span> / C# 12</span>
+          <span class="tech-item"><span style="color: var(--color-ink); font-weight: 600;">TypeScript</span> ESNext</span>
+          <span class="tech-item"><span style="color: var(--color-ink); font-weight: 600;">PostgreSQL</span> Distributed</span>
+          <span class="tech-item"><span style="color: var(--color-ink); font-weight: 600;">Redis</span> In-Memory</span>
+          <span class="tech-item"><span style="color: var(--color-ink); font-weight: 600;">ClickHouse</span> Columnar</span>
+          <span class="tech-item"><span style="color: var(--color-ink); font-weight: 600;">Docker</span> / K8s</span>
+          <span class="tech-item"><span style="color: var(--color-ink); font-weight: 600;">WAI-ARIA</span> WCAG AA</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-band" aria-labelledby="projects-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="mono-eyebrow">ENGINEERING BENCHMARKS & ARCHITECTURE</span>
+          <h2 id="projects-heading" class="heading-lg">Dự án & Kiến trúc tiêu biểu</h2>
+          <p class="body-md">Mỗi dự án được tối ưu hóa cho độ trễ cực thấp, khả năng chịu lỗi cao và trải nghiệm người dùng không rào cản.</p>
+        </header>
+
+        <div id="project-filter-tabs" class="filter-bar" role="tablist" aria-label="Lọc dự án theo danh mục">
+          <button type="button" role="tab" id="tab-all" class="category-pill active" data-category="all" aria-selected="true" aria-controls="projects-grid">Tất cả dự án</button>
+          <button type="button" role="tab" id="tab-systems" class="category-pill" data-category="systems" aria-selected="false" aria-controls="projects-grid">Hệ thống phân tán</button>
+          <button type="button" role="tab" id="tab-web" class="category-pill" data-category="web" aria-selected="false" aria-controls="projects-grid">Ứng dụng Web</button>
+          <button type="button" role="tab" id="tab-tools" class="category-pill" data-category="tools" aria-selected="false" aria-controls="projects-grid">Công cụ lập trình</button>
+          <button type="button" role="tab" id="tab-ai" class="category-pill" data-category="ai" aria-selected="false" aria-controls="projects-grid">AI & Dữ liệu</button>
+        </div>
+
+        <div id="projects-grid" class="grid-projects" role="region" aria-live="polite">
+          
+          <article class="feature-card project-card" aria-labelledby="project-title-hyper-cache-engine">
+            <div class="project-card-header">
+              <span class="project-badge production">Production</span>
+              <button type="button" class="btn btn-ghost-sm view-details-trigger" data-id="hyper-cache-engine" aria-haspopup="dialog" aria-label="Xem chi tiết kỹ thuật dự án ApexKV: Distributed In-Memory Cache">Inspect Spec</button>
+            </div>
+            <h3 id="project-title-hyper-cache-engine" class="heading-md" style="margin-bottom: 8px;">ApexKV: Distributed In-Memory Cache</h3>
+            <p class="body-md" style="margin-bottom: var(--space-md);">Ultra-low latency distributed in-memory cache engine with Raft consensus and zero-allocation socket pipeline.</p>
+            <div class="project-metrics" role="region" aria-label="Chỉ số hiệu năng xác thực">
+              <div class="metric-item"><span class="metric-value tabular-nums">450k req/s</span><span class="metric-label">Throughput</span></div>
+              <div class="metric-item"><span class="metric-value tabular-nums">0.85ms</span><span class="metric-label">P99 Latency</span></div>
+              <div class="metric-item"><span class="metric-value tabular-nums">94.2%</span><span class="metric-label">Memory Efficiency</span></div>
+            </div>
+            <div class="tech-tag-list" aria-label="Công nghệ sử dụng">
+              <span class="tech-tag">.NET 8</span><span class="tech-tag">C#</span><span class="tech-tag">System.IO.Pipelines</span><span class="tech-tag">Raft Consensus</span><span class="tech-tag">Docker</span><span class="tech-tag">Prometheus</span>
+            </div>
+          </article>
+
+          <article class="feature-card project-card" aria-labelledby="project-title-cloud-telemetry-dashboard">
+            <div class="project-card-header">
+              <span class="project-badge production">Production</span>
+              <button type="button" class="btn btn-ghost-sm view-details-trigger" data-id="cloud-telemetry-dashboard" aria-haspopup="dialog" aria-label="Xem chi tiết kỹ thuật dự án Vigil: Observability & APM Platform">Inspect Spec</button>
+            </div>
+            <h3 id="project-title-cloud-telemetry-dashboard" class="heading-md" style="margin-bottom: 8px;">Vigil: Observability & APM Platform</h3>
+            <p class="body-md" style="margin-bottom: var(--space-md);">Enterprise observability dashboard processing OpenTelemetry traces, distributed spans, and real-time alerts.</p>
+            <div class="project-metrics" role="region" aria-label="Chỉ số hiệu năng xác thực">
+              <div class="metric-item"><span class="metric-value tabular-nums">1.2B/day</span><span class="metric-label">Event Ingestion</span></div>
+              <div class="metric-item"><span class="metric-value tabular-nums"><120ms</span><span class="metric-label">Query Speed</span></div>
+              <div class="metric-item"><span class="metric-value tabular-nums">100/100</span><span class="metric-label">Lighthouse A11y</span></div>
+            </div>
+            <div class="tech-tag-list" aria-label="Công nghệ sử dụng">
+              <span class="tech-tag">TypeScript</span><span class="tech-tag">ClickHouse</span><span class="tech-tag">WebSockets</span><span class="tech-tag">WAI-ARIA</span><span class="tech-tag">Tailwind CSS</span>
+            </div>
+          </article>
+
+          <article class="feature-card project-card" aria-labelledby="project-title-rfc-problem-details-sdk">
+            <div class="project-card-header">
+              <span class="project-badge open-source">Open Source</span>
+              <button type="button" class="btn btn-ghost-sm view-details-trigger" data-id="rfc-problem-details-sdk" aria-haspopup="dialog" aria-label="Xem chi tiết kỹ thuật dự án ProblemDetails.NET: RFC 9457 Library">Inspect Spec</button>
+            </div>
+            <h3 id="project-title-rfc-problem-details-sdk" class="heading-md" style="margin-bottom: 8px;">ProblemDetails.NET: RFC 9457 Library</h3>
+            <p class="body-md" style="margin-bottom: var(--space-md);">Standardized RFC 9457 HTTP API error handling middleware with zero allocation and automatic schema generation.</p>
+            <div class="project-metrics" role="region" aria-label="Chỉ số hiệu năng xác thực">
+              <div class="metric-item"><span class="metric-value tabular-nums">0 B</span><span class="metric-label">GC Allocation</span></div>
+              <div class="metric-item"><span class="metric-value tabular-nums">85k+</span><span class="metric-label">NuGet Downloads</span></div>
+              <div class="metric-item"><span class="metric-value tabular-nums">99.4%</span><span class="metric-label">Test Coverage</span></div>
+            </div>
+            <div class="tech-tag-list" aria-label="Công nghệ sử dụng">
+              <span class="tech-tag">.NET</span><span class="tech-tag">C#</span><span class="tech-tag">Roslyn Generators</span><span class="tech-tag">RFC 9457</span><span class="tech-tag">xUnit</span><span class="tech-tag">BenchmarkDotNet</span>
+            </div>
+          </article>
+
+          <article class="feature-card project-card" aria-labelledby="project-title-edge-inference-gateway">
+            <div class="project-card-header">
+              <span class="project-badge production">Production</span>
+              <button type="button" class="btn btn-ghost-sm view-details-trigger" data-id="edge-inference-gateway" aria-haspopup="dialog" aria-label="Xem chi tiết kỹ thuật dự án Synapse: Edge AI Routing Gateway">Inspect Spec</button>
+            </div>
+            <h3 id="project-title-edge-inference-gateway" class="heading-md" style="margin-bottom: 8px;">Synapse: Edge AI Routing Gateway</h3>
+            <p class="body-md" style="margin-bottom: var(--space-md);">Intelligent reverse proxy routing prompt requests between OpenAI, Anthropic, and local self-hosted vLLM instances.</p>
+            <div class="project-metrics" role="region" aria-label="Chỉ số hiệu năng xác thực">
+              <div class="metric-item"><span class="metric-value tabular-nums">38.5%</span><span class="metric-label">Cost Reduction</span></div>
+              <div class="metric-item"><span class="metric-value tabular-nums">24.1%</span><span class="metric-label">Cache Hit Rate</span></div>
+              <div class="metric-item"><span class="metric-value tabular-nums"><4ms</span><span class="metric-label">Routing Overhead</span></div>
+            </div>
+            <div class="tech-tag-list" aria-label="Công nghệ sử dụng">
+              <span class="tech-tag">Go</span><span class="tech-tag">Envoy</span><span class="tech-tag">Redis</span><span class="tech-tag">Vector Embeddings</span><span class="tech-tag">vLLM</span><span class="tech-tag">OpenAI API</span>
+            </div>
+          </article>
+
+          <article class="feature-card project-card" aria-labelledby="project-title-financial-settlement-engine">
+            <div class="project-card-header">
+              <span class="project-badge production">Production</span>
+              <button type="button" class="btn btn-ghost-sm view-details-trigger" data-id="financial-settlement-engine" aria-haspopup="dialog" aria-label="Xem chi tiết kỹ thuật dự án LedgerStream: Double-Entry Core Banking">Inspect Spec</button>
+            </div>
+            <h3 id="project-title-financial-settlement-engine" class="heading-md" style="margin-bottom: 8px;">LedgerStream: Double-Entry Core Banking</h3>
+            <p class="body-md" style="margin-bottom: var(--space-md);">Idempotent double-entry accounting ledger engine with cryptographically verifiable audit trails.</p>
+            <div class="project-metrics" role="region" aria-label="Chỉ số hiệu năng xác thực">
+              <div class="metric-item"><span class="metric-value tabular-nums">$180M+</span><span class="metric-label">Processed Volume</span></div>
+              <div class="metric-item"><span class="metric-value tabular-nums">0.000%</span><span class="metric-label">Discrepancy Rate</span></div>
+              <div class="metric-item"><span class="metric-value tabular-nums">16 Nodes</span><span class="metric-label">Shard Scale</span></div>
+            </div>
+            <div class="tech-tag-list" aria-label="Công nghệ sử dụng">
+              <span class="tech-tag">PostgreSQL</span><span class="tech-tag">Kafka</span><span class="tech-tag">.NET 8</span><span class="tech-tag">Redis Distributed Locks</span><span class="tech-tag">Docker</span>
+            </div>
+          </article>
+
+          <article class="feature-card project-card" aria-labelledby="project-title-accessible-design-system">
+            <div class="project-card-header">
+              <span class="project-badge open-source">Open Source</span>
+              <button type="button" class="btn btn-ghost-sm view-details-trigger" data-id="accessible-design-system" aria-haspopup="dialog" aria-label="Xem chi tiết kỹ thuật dự án Geist-A11y: Headless Component Suite">Inspect Spec</button>
+            </div>
+            <h3 id="project-title-accessible-design-system" class="heading-md" style="margin-bottom: 8px;">Geist-A11y: Headless Component Suite</h3>
+            <p class="body-md" style="margin-bottom: var(--space-md);">Accessible, keyboard-navigable headless UI components implementing WAI-ARIA authoring practices.</p>
+            <div class="project-metrics" role="region" aria-label="Chỉ số hiệu năng xác thực">
+              <div class="metric-item"><span class="metric-value tabular-nums">4.8 KB</span><span class="metric-label">Bundle Size</span></div>
+              <div class="metric-item"><span class="metric-value tabular-nums">2.1 AA</span><span class="metric-label">WCAG Level</span></div>
+              <div class="metric-item"><span class="metric-value tabular-nums">1.4k</span><span class="metric-label">GitHub Stars</span></div>
+            </div>
+            <div class="tech-tag-list" aria-label="Công nghệ sử dụng">
+              <span class="tech-tag">TypeScript</span><span class="tech-tag">WAI-ARIA</span><span class="tech-tag">Vite</span><span class="tech-tag">axe-core</span><span class="tech-tag">CSS Custom Properties</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture" class="section-band" style="background-color: var(--color-canvas); border-top: 1px solid var(--color-hairline);" aria-labelledby="arch-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="mono-eyebrow">ZERO-ALLOCATION & STANDARDS</span>
+          <h2 id="arch-heading" class="heading-lg">Chuẩn mực kiến trúc mã nguồn</h2>
+          <p class="body-md">Ứng dụng System.IO.Pipelines, ArrayPool, và RFC 9457 Problem Details nhằm triệt tiêu Garbage Collection pauses trong các dịch vụ phụ tải cao.</p>
+        </header>
+
+        <div class="code-block-card">
+          <div class="code-header">
+            <div class="code-dots" aria-hidden="true">
+              <span class="code-dot"></span>
+              <span class="code-dot"></span>
+              <span class="code-dot"></span>
+            </div>
+            <span class="mono-eyebrow" style="font-size: 11px;">HighThroughputSocketHandler.cs</span>
+            <button 
+              type="button" 
+              class="btn btn-ghost-sm copy-email-btn" 
+              style="height: 26px; font-size: 11px;"
+              aria-label="Sao chép địa chỉ liên hệ kỹ thuật">
+              Liên hệ trao đổi code
+            </button>
+          </div>
+          <pre class="code-pre"><code><span class="token-comment">// C# 12 / .NET 8: Zero-Allocation Request Stream Buffer Pipeline</span>
+<span class="token-keyword">public sealed class</span> <span class="token-type">HighThroughputSocketHandler</span> : <span class="token-type">IAsyncDisposable</span>
+{
+    <span class="token-keyword">private readonly</span> <span class="token-type">PipeReader</span> _reader;
+    <span class="token-keyword">private readonly</span> <span class="token-type">ILogger</span>&lt;<span class="token-type">HighThroughputSocketHandler</span>&gt; _logger;
+
+    <span class="token-keyword">public async ValueTask</span> HandleStreamAsync(<span class="token-type">CancellationToken</span> ct = <span class="token-keyword">default</span>)
+    {
+        <span class="token-keyword">while</span> (!ct.IsCancellationRequested)
+        {
+            <span class="token-type">ReadResult</span> result = <span class="token-keyword">await</span> _reader.ReadAsync(ct);
+            <span class="token-type">ReadOnlySequence</span>&lt;<span class="token-keyword">byte</span>&gt; buffer = result.Buffer;
+
+            <span class="token-keyword">while</span> (TryProcessMessage(<span class="token-keyword">ref</span> buffer, <span class="token-keyword">out var</span> message))
+            {
+                <span class="token-keyword">await</span> DispatchCommandAsync(message, ct);
+            }
+
+            _reader.AdvanceTo(buffer.Start, buffer.End);
+            <span class="token-keyword">if</span> (result.IsCompleted) <span class="token-keyword">break</span>;
+        }
+    }
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-band" aria-labelledby="experience-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="mono-eyebrow">CAREER MILESTONES</span>
+          <h2 id="experience-heading" class="heading-lg">Kinh nghiệm & Dấu ấn kỹ thuật</h2>
+          <p class="body-md">Quá trình đóng góp kiến trúc tại các nền tảng công nghệ tài chính và hạ tầng đám mây.</p>
+        </header>
+
+        <div id="experience-timeline" role="region" aria-label="Lộ trình kinh nghiệm chuyên môn">
+          <div class="timeline-card">
+            <div class="timeline-period tabular-nums">2023 — Hiện tại</div>
+            <div>
+              <h3 class="timeline-role">Lead Systems & Cloud Architect <span class="timeline-company">· FinTech Infrastructure Corp</span></h3>
+              <p class="timeline-description">Chủ trì hiện đại hóa hạ tầng giao dịch thanh toán lõi, chuyển đổi hệ thống monolithic sang microservices hiệu năng cao trên .NET 8. Giảm 68% độ trễ xử lý giao dịch, vận hành an toàn với sản lượng hơn $180M/tháng và độ sẵn sàng 99.995%.</p>
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period tabular-nums">2021 — 2023</div>
+            <div>
+              <h3 class="timeline-role">Senior Full-Stack Software Engineer <span class="timeline-company">· Enterprise Cloud Platforms</span></h3>
+              <p class="timeline-description">Kiến trúc nền tảng phát triển nội bộ và hệ thống giám sát phân tán (Observability). Xây dựng telemetry dashboard xử lý hàng tỷ metrics/ngày trên cụm ClickHouse với thời gian phản hồi dưới 1 giây. Thực thi tiêu chuẩn trợ năng WAI-ARIA WCAG 2.1 AA trên toàn bộ design system doanh nghiệp.</p>
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period tabular-nums">2019 — 2021</div>
+            <div>
+              <h3 class="timeline-role">Backend Software Engineer <span class="timeline-company">· Distributed Systems Lab</span></h3>
+              <p class="timeline-description">Thiết kế các thuật toán đồng thuận phân tán, giao thức RPC tùy chỉnh và bộ nhớ đệm phân tán bằng C# và Go. Tối ưu hóa bộ nhớ RAM với kỹ thuật zero-allocation buffer pooling và kiểm thử hiệu năng khắt khe bằng BenchmarkDotNet.</p>
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period tabular-nums">2017 — 2019</div>
+            <div>
+              <h3 class="timeline-role">Software Developer <span class="timeline-company">· Digital Solutions Studio</span></h3>
+              <p class="timeline-description">Phát triển các ứng dụng web phục vụ khách hàng doanh nghiệp, thiết kế RESTful APIs chuẩn mực và kiến trúc cơ sở dữ liệu quan hệ PostgreSQL với ASP.NET Core. Tự động hóa quy trình CI/CD qua Docker và GitHub Actions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-band" style="background-color: var(--color-canvas); border-top: 1px solid var(--color-hairline);" aria-labelledby="skills-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="mono-eyebrow">TECHNICAL PROFICIENCY</span>
+          <h2 id="skills-heading" class="heading-lg">Năng lực chuyên môn & Kỹ thuật</h2>
+          <p class="body-md">Bộ công cụ hoàn thiện từ tầng vi mạch mạng, hệ cơ sở dữ liệu đến giao diện trực quan.</p>
+        </header>
+
+        <div id="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-lg);" role="region" aria-label="Phân loại kỹ năng kỹ thuật">
+          <div class="feature-card" style="padding: 24px;">
+            <h3 class="mono-eyebrow" style="color: var(--color-ink); margin-bottom: 16px;">Ngôn ngữ & Nền tảng</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>C# / .NET 8+</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>TypeScript</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>JavaScript (ESNext)</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>Go</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>SQL</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>HTML5 & CSS3</span></li>
+            </ul>
+          </div>
+          <div class="feature-card" style="padding: 24px;">
+            <h3 class="mono-eyebrow" style="color: var(--color-ink); margin-bottom: 16px;">Kiến trúc & Chuẩn mực</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>Domain-Driven Design (DDD)</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>Event-Driven Architecture</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>CQRS & Event Sourcing</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>Zero-Allocation Design</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>RFC 9457 Problem Details</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>WAI-ARIA WCAG 2.1 AA</span></li>
+            </ul>
+          </div>
+          <div class="feature-card" style="padding: 24px;">
+            <h3 class="mono-eyebrow" style="color: var(--color-ink); margin-bottom: 16px;">Cơ sở dữ liệu & Streaming</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>PostgreSQL</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>Redis & Dragonfly</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>ClickHouse</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>Apache Kafka</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>RabbitMQ</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>SQLite</span></li>
+            </ul>
+          </div>
+          <div class="feature-card" style="padding: 24px;">
+            <h3 class="mono-eyebrow" style="color: var(--color-ink); margin-bottom: 16px;">DevOps & Hạ tầng</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>Docker</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>Kubernetes</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>Linux / Bash</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>Terraform</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>GitHub Actions</span></li>
+              <li class="body-md" style="display: flex; align-items: center; gap: 8px; color: var(--color-body);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-link)" stroke-width="2.5" aria-hidden="true" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg><span>Prometheus & Grafana</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta-band" aria-labelledby="contact-heading">
+      <div class="container cta-box">
+        <span class="mono-eyebrow" style="margin-bottom: var(--space-sm);">START A COLLABORATION</span>
+        <h2 id="contact-heading" class="heading-lg" style="margin-bottom: var(--space-xs);">Sẵn sàng cho dự án tiếp theo</h2>
+        <p class="body-md">Bạn đang tìm kiếm giải pháp tối ưu hệ thống, nâng cấp kiến trúc microservices hoặc cần một frontend engineer với tư duy trợ năng đỉnh cao? Hãy gửi tin nhắn.</p>
+
+        <div class="direct-contact-row">
+          <a href="mailto:contact@duytinh.dev" id="direct-email-link" class="btn btn-secondary" style="height: 38px; font-size: 13px;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span id="direct-email-text">contact@duytinh.dev</span>
+          </a>
+          <a href="https://zalo.me/0901234567" target="_blank" rel="noopener noreferrer" id="direct-zalo-link" class="btn btn-secondary" style="height: 38px; font-size: 13px;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span id="direct-zalo-text">Chat Zalo</span>
+          </a>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate aria-label="Biểu mẫu liên hệ hợp tác">
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Họ và tên <span aria-hidden="true">*</span></label>
+            <input 
+              type="text" 
+              id="contact-name" 
+              name="name" 
+              class="text-input" 
+              placeholder="Nguyễn Văn A" 
+              required 
+              aria-required="true"
+              aria-describedby="error-name"
+              aria-invalid="false">
+            <span id="error-name" class="form-error-msg" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Địa chỉ email <span aria-hidden="true">*</span></label>
+            <input 
+              type="email" 
+              id="contact-email" 
+              name="email" 
+              class="text-input" 
+              placeholder="name@company.com" 
+              required 
+              aria-required="true"
+              aria-describedby="error-email"
+              aria-invalid="false">
+            <span id="error-email" class="form-error-msg" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Nội dung trao đổi <span aria-hidden="true">*</span></label>
+            <textarea 
+              id="contact-message" 
+              name="message" 
+              class="text-area" 
+              rows="4" 
+              placeholder="Mô tả về dự án, yêu cầu kỹ thuật hoặc vị trí cần trao đổi..." 
+              required 
+              aria-required="true"
+              aria-describedby="error-message"
+              aria-invalid="false"></textarea>
+            <span id="error-message" class="form-error-msg" role="alert"></span>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 8px;">
+            <button 
+              type="submit" 
+              id="contact-submit-btn" 
+              class="btn btn-primary" 
+              style="width: 100%;">
+              <span>Gửi thông điệp</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-link">
+          <svg class="brand-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polygon points="12 2 2 22 22 22 12 2"/>
+          </svg>
+          <span>duytinh<span style="color: var(--color-mute);">.dev</span></span>
+        </a>
+        <p class="body-sm" style="margin-top: 8px;">
+          Được thiết kế theo hệ thống Vercel Geist Design System & tiêu chuẩn WAI-ARIA WCAG 2.1 AA. Mọi dòng mã đều phục vụ hiệu năng và tính bao hàm.
+        </p>
+        <span class="mono-eyebrow tabular-nums" style="margin-top: 12px; font-size: 11px;">© 2026 DUY TINH. ALL RIGHTS RESERVED.</span>
+      </div>
+
+      <div class="footer-links-grid">
+        <div>
+          <h3 class="footer-group-title">Điều hướng</h3>
+          <ul class="footer-links-list">
+            <li><a href="#projects" class="footer-link">Dự án</a></li>
+            <li><a href="#architecture" class="footer-link">Kiến trúc</a></li>
+            <li><a href="#experience" class="footer-link">Kinh nghiệm</a></li>
+            <li><a href="#skills" class="footer-link">Kỹ năng</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-group-title">Chuẩn mực</h3>
+          <ul class="footer-links-list">
+            <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" rel="noopener noreferrer" class="footer-link">WCAG 2.1 AA</a></li>
+            <li><a href="https://www.rfc-editor.org/rfc/rfc9457" target="_blank" rel="noopener noreferrer" class="footer-link">RFC 9457 Problem Details</a></li>
+            <li><a href="https://learn.microsoft.com/dotnet/standard/io/pipelines" target="_blank" rel="noopener noreferrer" class="footer-link">System.IO.Pipelines</a></li>
+            <li><a href="https://vercel.com/geist" target="_blank" rel="noopener noreferrer" class="footer-link">Geist System</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-group-title">Kết nối</h3>
+          <ul class="footer-links-list">
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a></li>
+            <li><a href="https://zalo.me/0901234567" target="_blank" rel="noopener noreferrer" id="footer-zalo-link" class="footer-link">Zalo</a></li>
+            <li><button type="button" class="footer-link copy-email-btn" style="background: none; border: none; padding: 0; cursor: pointer; text-align: left;">Sao chép Email</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="drawer-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+  <aside 
+    id="project-side-sheet" 
+    class="side-sheet" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="drawer-title" 
+    aria-hidden="true">
+    <div class="side-sheet-header">
+      <h3 id="drawer-title" class="heading-md" style="font-size: 18px;">Chi tiết kiến trúc</h3>
+      <button 
+        type="button" 
+        id="drawer-close-btn" 
+        class="btn-icon-circular" 
+        aria-label="Đóng bảng chi tiết dự án">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div id="drawer-content" class="side-sheet-body">
+      
+    </div>
+  </aside>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+  
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
